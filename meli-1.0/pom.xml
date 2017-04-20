@@ -163,6 +163,7 @@ limitations under the License.
         <version>2.6</version> <!-- required for Eclipse Mars -->
         <configuration>
           <archiveClasses>true</archiveClasses>
+          <skipTests>true</skipTests>
           <webResources>
             <!-- in order to interpolate version from pom into appengine-web.xml -->
             <resource>
