@@ -46,6 +46,6 @@ Entonces utilicé una fórmula del producto escalar, la cual obtuve de este siti
 
 Esta fórmula se aplica dentro de la clase `src/main/java/com/meli/entity/ServicioMeteorologico.java` en los métodos de instancia getProductoEscalar(Point2D p1, Point2D p2, Point2D p3) y puntoDentroDelTriangulo(Point2D p, Point2D v1, Point2D v2, Point2D v3)
 
-========================================================================================================================================
+=========================================================
 
 El proyecto fué hosteado en google cloud 
