@@ -28,9 +28,11 @@ Para la resolución se aplicaron las siguientes reglas:
 
 -Planetas alineados
 Utilizando la teoría de "la recta que pasa por 2 o mas puntos" se puede deducir si los planteas se encuentran alineados, mediante el cálculo de sus pendientes, usando la fórmula
+
 * dx = x2 - x1
 * dy = y2 - y1
 * mA = dy / dx (siempre que dx sea <> 0)
+
 Si los planetas se encuentran alineados entre si, ya se deduce un estado del clima (óptimas condiciones de presión y temperatura). Utilizando la misma fórmula se verifica si la recta para por el sol (0,0) para obtener un estado de clima distinto (sequía).
 Esta fórmula se encuntra en le método de instancia getCalculoDePendiente de la clase `src/main/java/com/meli/entity/ServicioMeteorologico.java`, la cual recibe por parámetro 2 objetos del tipo Point2D
 
