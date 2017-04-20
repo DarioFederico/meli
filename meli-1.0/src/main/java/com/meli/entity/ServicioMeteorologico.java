@@ -63,18 +63,18 @@ public class ServicioMeteorologico {
 		return (dx != 0) ? (dy / dx) : Double.POSITIVE_INFINITY;
 	}
 	
-	private double sign (Point2D p1, Point2D p2, Point2D p3)
+	private double getProductoEscalar(Point2D p1, Point2D p2, Point2D p3)
 	{
 	    return (p1.getX() - p3.getX()) * (p2.getY() - p3.getY()) - (p2.getX() - p3.getX()) * (p1.getY() - p3.getY());
 	}
 
-	private Boolean puntoDentroDelTriangulo (Point2D p, Point2D v1, Point2D v2, Point2D v3)
+	private Boolean puntoDentroDelTriangulo(Point2D p, Point2D v1, Point2D v2, Point2D v3)
 	{
 		Boolean b1, b2, b3;
 
-	    b1 = sign(p, v1, v2) < 0.0f;
-	    b2 = sign(p, v2, v3) < 0.0f;
-	    b3 = sign(p, v3, v1) < 0.0f;
+	    b1 = getProductoEscalar(p, v1, v2) < 0.0f;
+	    b2 = getProductoEscalar(p, v2, v3) < 0.0f;
+	    b3 = getProductoEscalar(p, v3, v1) < 0.0f;
 
 	    return ((b1 == b2) && (b2 == b3));
 	}
